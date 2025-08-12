@@ -1,0 +1,236 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  margin: 0;
+  padding: 20px;
+  color: #333;
+  line-height: 1.5;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.logo {
+  background: #ffde00;
+  color: black;
+  font-weight: bold;
+  padding: 5px 10px;
+  font-size: 20px;
+}
+
+.guvenli {
+  color: #00A698;
+  font-size: 19px;
+  font-weight: bold;
+}
+
+.main-content {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.card {
+  background: white;
+  border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  padding: 25px;
+  width: 100%;
+  max-width: 500px;
+}
+
+/* ADDRESS CARD SPECIFIC STYLES */
+.address-card h2 {
+  text-align: left;
+  font-size: 18px;
+  font-weight: normal;
+  border-bottom: none;
+  margin: 0 0 25px 0;
+  padding: 0;
+  color: #333;
+}
+
+.address-card .form-group {
+  margin-bottom: 20px;
+}
+
+.address-card .form-group strong {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 14px;
+  color: #333;
+}
+
+.address-card .form-row {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.address-card .form-row .form-group {
+  flex: 1;
+}
+
+.address-card input,
+.address-card select {
+  height: 40px;
+  padding: 10px;
+  font-size: 14px;
+  width: 100%;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  box-sizing: border-box;
+}
+
+.address-card select {
+  appearance: none;
+  background: white url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e") no-repeat;
+  background-position: right 10px center;
+  background-size: 15px;
+  padding-right: 30px;
+}
+
+.address-card h3 {
+  font-size: 14px;
+  margin: 25px 0 10px 0;
+  color: #666;
+  font-weight: normal;
+}
+
+.address-card .divider {
+  border: none;
+  border-top: 1px solid #eee;
+  margin: 25px 0;
+}
+
+.address-card textarea {
+  min-height: 80px;
+  width: 100%;
+  padding: 0px;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  font-size: 14px;
+  resize: vertical;
+  margin-top: 10px;
+}
+
+.address-card .address-note {
+  font-size: 13px;
+  color: #999;
+  margin-top: 5px;
+  font-style: italic;
+}
+
+.address-card input[type="tel"] {
+  font-weight: bold;
+}
+
+/* ORDER CARD STYLES (existing) */
+.order-card h2 {
+  text-align: center;
+  font-size: 16px;
+  margin-top: 0;
+  margin-bottom: 15px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #eee;
+}
+
+.product-info {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+  align-items: center;
+}
+
+.product-info img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border: 1px solid #eee;
+}
+
+.product-info p {
+  margin: 0;
+  font-size: 13px;
+  flex: 1;
+}
+
+.price-details {
+  margin-top: 20px;
+}
+
+.price-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+  font-size: 13px;
+}
+
+.total-row {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+  padding-top: 10px;
+  border-top: 1px solid #eee;
+  font-weight: bold;
+}
+
+.pay-button {
+  background: #0064d0;
+  color: white;
+  border: none;
+  padding: 12px;
+  width: 100%;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 15px;
+}
+
+.pay-button:hover {
+  background-color: #0064d0;
+}
+
+/* Mobil Uyumluluk */
+@media (max-width: 768px) {
+  .main-content {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .card {
+    max-width: 100%;
+  }
+  
+  header {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+  
+  .form-row {
+    flex-direction: column;
+    gap: 0;
+  }
+}
+.form-group input[readonly] {
+  background-color: #f5f5f5;
+  cursor: not-allowed;
+  color: #333;
+}
+.urun-baslik {
+  font-weight: bold;
+  margin: 0;
+}

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Güvenli Ödeme | sahibinden.com</title>
+  <link rel="stylesheet" href="odeme.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <span class="logo">sahibinden.com</span>
+      <span class="guvenli">🔒 Güvenli ödeme</span>
+    </header>
+
+    <div class="main-content">
+      <!-- Adres Bilgileri -->
+      <div class="card address-card">
+        <h2>Adres bilgileri</h2>
+        <div class="form-group">
+          <label>Ad Soyad</label>
+          <input type="text" placeholder="Ad Soyad">
+        </div>
+        <div class="form-group">
+          <label>Telefon</label>
+          <div style="display: flex; align-items: center;">
+            <input type="text" value="+90" readonly style="width: 50px; text-align: center; background-color: #f5f5f5; border: 1px solid #ddd; border-radius: 3px; margin-right: 5px;">
+            <input type="tel" placeholder="Telefon numarası girin" style="flex: 1;">
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label>İl</label>
+            <input type="text" placeholder="İl">
+          </div>
+          <div class="form-group">
+            <label>İlçe</label>
+            <input type="text" placeholder="İlçe">
+          </div>
+        </div>
+        <div class="form-group">
+          <label>Adres</label>
+          <textarea placeholder="Mahalle, cadde, sokak vb. bilgileri girin"></textarea>
+        </div>
+      </div>
+
+      <!-- Sipariş Özeti -->
+      <div class="card order-card">
+        <h2>Sipariş özeti</h2>
+        <div class="product-info">
+          <img src="https://i.ibb.co/bjPm9Pkn/1.webp" alt="Ürün resmi">
+          <div>
+            <p class="urun-baslik">PES21 Jelatini Açılmamış</p>
+          </div>
+        </div>
+        <div class="price-details">
+          <div class="price-row">
+            <span>Ürün toplamı</span>
+            <span>2.000,00 TL</span>
+          </div>
+          <div class="price-row">
+            <span>S - Param Güvende hizmet bedeli</span>
+            <span>15,00 TL</span>
+          </div>
+          <div class="total-row">
+            <span>Toplam tutar</span>
+            <span>2.015,00 TL</span>
+          </div>
+        </div>
+        <!-- Butona Yönlendirme Eklendi -->
+        <a href="iban.html">
+          <button class="pay-button">Kaydet ve ödemeye geç</button>
+        </a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

